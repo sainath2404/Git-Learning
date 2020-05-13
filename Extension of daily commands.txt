@@ -1,0 +1,55 @@
+git push remotename branchname
+
+git push origin master
+
+git log -> gives info related to commits done in descending order of commited time.
+
+git log can take params to gove specific commit history.
+
+git log -20 -> give only 20 commits
+
+git log --oneline -> To get commit log in one line
+
+git log --stat -> give full info about committed logs along with file names 
+
+git log --patch -> full details for each command
+
+--General rules for writing commiting--
+
+--Remove and Move files--
+
+First we need to tell git to stop tracking the file
+
+git rm "Filename.ext" -> This will remove the file from the project.
+
+In order to stop tracking but not to remove file from project we need to use below command.
+
+git rm --cached "File Name"
+
+If we need to rename
+
+git mv Existingname newname
+
+
+--branches--
+git checkout -b newbranchname
+
+git checkout master -> Checking out to master branch
+
+If we dont want to check out then
+
+git branch branchname -> This will only create the new branch
+
+git stash -> to record current state of a branch and make branch clean.
+
+git stash list -> Gives list of stashed work in progress file
+
+git stash show -> Gives more details of stashed files
+
+git stash pop -> To get the files from stash list so that git can start tracking the file.
+
+--Merging--
+
+git merge newbranch -> This will merge new branch to master branch
+
+
