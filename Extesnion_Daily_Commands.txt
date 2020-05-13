@@ -1,0 +1,35 @@
+git push remotename branchname
+
+git push origin master
+
+git log -> gives info related to commits done in descending order of commited time.
+
+git log can take params to gove specific commit history.
+
+git log -20 -> give only 20 commits
+
+git log --oneline -> To get commit log in one line
+
+git log --stat -> give full info about committed logs along with file names 
+
+git log --patch -> full details for each command
+
+--General rules for writing commiting--
+
+--Remove and Move files--
+
+First we need to tell git to stop tracking the file
+
+git rm "Filename.ext" -> This will remove the file from the project.
+
+In order to stop tracking but not to remove file from project we need to use below command.
+
+git rm --cached "File Name"
+
+If we need to rename
+
+git mv Existingname newname
+
+
+--branches--
+
