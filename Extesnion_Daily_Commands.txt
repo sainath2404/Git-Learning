@@ -32,33 +32,4 @@ git mv Existingname newname
 
 
 --branches--
-git checkout -b newbranchname
-
-git checkout master -> Checking out to master branch
-
-If we dont want to check out then
-
-git branch branchname -> This will only create the new branch
-
-git stash -> to record current state of a branch and make branch clean.
-
-git stash list -> Gives list of stashed work in progress file
-
-git stash show -> Gives more details of stashed files
-
-git stash pop -> To get the files from stash list so that git can start tracking the file.
-
---Merging--
-
-git merge newbranch -> This will merge new branch to master branch
-
-git merge master -> this will merge the checkout branch with master branch
-
---Reset--
-
-git reset --soft commit id
-git reset --mixed commit id or git reset commit id
-git reset --had commit id
-
-
 
