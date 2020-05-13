@@ -1,0 +1,83 @@
+project folder -> git init -> This means that put the project in Git. Used for initializing the Git Repository.
+
+Repo - Git storage area.
+
+we need to create the snapshot of the project. We can tell which part of project goes to Repo.
+
+git add . ->Tell git to add all the files in current directory to git  repo. This is just sending a request, but files not yet placed.
+
+git commit -> CReate a snapshot that are available in previous command and put them in repositroy.
+
+git commit -m "Message Test" -> We can give message text for commit also while comitting.
+
+git log -> To get the history of repository.
+
+atom filename.extension -> will opne the file -> This is just command line code. 
+
+git status -> To get the status of the project -> It shows the modified file in red.
+
+One any file is updated then we need to commit only that particular file.
+
+git add filename.extension.
+
+after adding if we again give git status -> Then it will show modified file in green telling that it is ready to go into repository.
+
+git commit -m "message"
+
+git status -> again to get status
+
+git log gives all the commit details.
+
+git diff -> to get difference between 2 gits
+
+we can get the difference using the id of 2 commits
+
+git generates the ID for commits automatically. 
+
+git diff few words of ID soruce destination ID few words
+
+git checkout ID of the git commit. If we do this then git takes the files for that ID and puts in our project folder.
+
+--Tracking project history--
+
+branching
+
+git branch -> for branching
+git merge -> For merging
+
+we can use checkout also to put files from master branch to other branches or vice versa.
+
+--Making sense of GIT--
+
+Git is Fast, smart,flexible and powerful, safe and secure.
+
+Distributed version control
+
+git clone Servername-> Copies(Clones) entires repository to personal system.
+
+we can do any changes needed with the repository branch, commit and everything to personal system repo.
+
+when ever needed we can ge the latest repo from server using git pull.
+
+or push the repo to server using git push.
+
+First pull the repo and merge the conflicts and the push to server.
+
+--Downsides to use git--
+
+Not ideal for binary files- > like audio and video files.
+Not user friendly.
+
+--Integrating GIT--
+
+GIT HUB is a repository hosting service, set of project managment tools, a social network centred on coding, provides a specifi workflow as it is build on git.
+
+The open source work flow--
+
+Forking a project -> MEans getting remote clone to a git hub repository to git hub personal account rather than getting in personl system (clone).
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+3 main stages of a file
+
+committed - The file is saved in local repo
+
+modified - The file is modified from local repo, from last committed version. Similar to work in progress
+
+staged - Once all changes are done then file moves to staged state.Then finally comitting the file to move to local repo.
+
+.git directory - repository - Taken from Git server abd saved in local.
+
+During check out the files will be moved from Repo to Working Directory.
+
+Once work is done then moved to Staging Area(Index) before comitting.
+
+Commit is only done for those files only in staging area.
+
+PWD - Print Working Directory - Gives the current  folder path location.
+
+cd for changing directory 
+
+cd.. -> Takes one folder up - To go up one directory
+cd name of folder - to go to that particualr directory
+cd~ -> TO jump to home folder.
+
+dir used to list files in the directory
+
+copy con - > create a new file
+mkdir - to create a new folder.
+
+--Installing GIT--
+
+https://git-scm.com/download/win -> gitbash will be downloaded which will give linux feel in windows.
+
+After installing we can give git --version to get the version on git installed
+
+next we need to use username and Email address.
+
+GitConfig tool used to set these
+
+git config --global user.name "username"
+git config --global user.email "usermail"
+
+Now all the file changes will be named with the username
+
+ween we are in a particular project directory then we can give
+
+git config user.name "username"
+git config user.email "usermail"
+
+in order to overwrite the global settings in that project alone.
+
+gif config --list -> This command gets the list if all configurations available.
+
+git config user.name -> to get only username.
+
+In order to get git command details
+man git -> gives all the commands that we can use.
+
+Porceleain (High level git commands used day to day)
+Plumbing (Low Level commands are not meant to be used manually in CMD.
+
+To get to specific section use below:
+
+git help config -> To get to the help section of git commands.
+
+git help -> smaller list of commands that we will use most of the time.
+
+--Initialize a new GIT Repo--
+
+Go to the folder of the project
+git init -> Initializes the git repo for that project.
+
+.git folder is hidden by default
+
+we can go to cd .git -> dir -> gives all files in .get
+
+--Send the code to a code host--
+
+First we need to create an account - with GITHUB.
+
+--Push local Repo to Git Hub--
+
+Readme file is quick way to read about the repository.
+
+After creating a repo in GIt Hub then we need to set up how to push or pull requests. We need to set up https for that.
+
+https://github.com/sainath2404/Git-Learning.git
+
+echo "# Git-Learning-Files" >> README.md
+
+git add . will add all the files in the current directory to the staging area
+
+then in order to comit
+
+git commit -m "Name req for commit"
+
+Once all commits are over then we need link local repo with the one created in Git Hub.
+
+git remote add origin url provided by git hub
+
+the above code will connect git hub repo with our local repo so that we can push and pull changes between them.
+
+git push -u origin master -> Used to push the git repo from local to origin for master branch
+
+Then it wil ask for username.
