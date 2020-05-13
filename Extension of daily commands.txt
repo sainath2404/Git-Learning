@@ -53,3 +53,4 @@ git stash pop -> To get the files from stash list so that git can start tracking
 git merge newbranch -> This will merge new branch to master branch
 
 
+
