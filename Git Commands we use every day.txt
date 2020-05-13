@@ -1,0 +1,55 @@
+git status -> To status of project
+
+Tracked files and untracked files
+
+Tracked files are those which were available in previous snapshot
+
+every track file can be in one of the 3 states
+committed
+modified
+staged
+
+untracked files
+
+New files that were not availabe in previous snapshot.
+
+git add newfile.extension -> To add files to staging area.
+
+git restore --staged <file> - To unstage the files that are staged and not committed.
+
+--Short Status--
+
+to get git status in less words
+
+git status -s or git status --short
+
+staged Modified and remains in current directory File Name
+
+M = Modified
+A = New files are added to staging area
+??=New file untracked by git.
+
+--Git Diff Explained--
+
+To see actual changes in files
+
+what changes are staged and ready to be committed
+what changes are done but not staged.
+
+git diff --staged
+
+git diff --staged --no-renames -> This tells git that no files are renamed.
+
+git uses HASH reference of the files to keep track of its contents.
+
+git diff -> to get differences in working directory.
+
+--Commit Changes--
+
+we can also commit without moving files to staging area
+
+git commit -a
+
+-a option stages all the modifed files in working directory
+
+git commit -a -m "Commit Message"

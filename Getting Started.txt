@@ -6,7 +6,7 @@ modified - The file is modified from local repo, from last committed version. Si
 
 staged - Once all changes are done then file moves to staged state.Then finally comitting the file to move to local repo.
 
-.git directory - repository - Taken from Git server abd saved in local.
+.git directory - repository - Taken from Git server and saved in local.
 
 During check out the files will be moved from Repo to Working Directory.
 
@@ -103,3 +103,4 @@ the above code will connect git hub repo with our local repo so that we can push
 git push -u origin master -> Used to push the git repo from local to origin for master branch
 
 Then it wil ask for username.
+
